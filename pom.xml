@@ -10,8 +10,8 @@
 	<name>Custom ROO Addons</name>
 	
 	<modules>
-		<module>${project.groupId}.builders.annotations</module>
-		<module>${project.groupId}.builders.addon</module>
+		<module>com.ss.roo.builders.annotations</module>
+		<module>com.ss.roo.builders.addon</module>
 	</modules>
 	
 </project>
