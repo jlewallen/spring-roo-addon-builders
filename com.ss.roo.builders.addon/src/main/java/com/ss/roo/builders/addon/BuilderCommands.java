@@ -24,10 +24,10 @@ public class BuilderCommands implements CommandMarker {
    }
 
    @CliCommand(value = "builder", help = "Creates a builder for the specified class")
-   public void newBuilder(
-         @CliOption(key = "class", mandatory = false, unspecifiedDefaultValue = "*", optionContext = "update,project", help = "The name of the class to generate a builder for") JavaType bean) {
+   public void newBuilder(@CliOption(key = "builder", mandatory = false, unspecifiedDefaultValue = "*", optionContext = "update,project", help = "The name of builder to generate") JavaType builder,
+         @CliOption(key = "bean", mandatory = false, unspecifiedDefaultValue = "*", optionContext = "update,project", help = "The name of the class to generate a builder for") JavaType bean) {
 
-      builderOperations.newBuilder(bean);
+      builderOperations.newBuilder(builder, bean);
    }
 
 }
